@@ -11,13 +11,17 @@
 	Result:<br>
 	<input type="text" id="result"><br>
 	<input type="button" onclick="addition()" value="Addition">
-	<input type="button" onclick="addition()" value="substraction">
+	<input type="button" onclick="subtraction()" value="substraction">
+	<input type="button" onclick="multiplication()" value="multiplication">
 	<script>
 		function addition(){
 			document.getElementById("result").value = parseFloat(document.getElementById("firstfield").value) + parseFloat(document.getElementById("secondfield").value);
 		}
 		function substraction(){
-			document.getElementById("result").value = parseFloat(document.getElementById("firstfield").value) - parseFloat(document.getElementById("secondfield").value);
+			document.getElementById("result").value = parseInt(document.getElementById("firstfield").value) - parseInt(document.getElementById("secondfield").value);
+		}
+		function multiplication(){
+			document.getElementById("result").value = parseFloat(document.getElementById("firstfield").value) * parseFloat(document.getElementById("secondfield").value);
 		}
 	</script>
 </body>
